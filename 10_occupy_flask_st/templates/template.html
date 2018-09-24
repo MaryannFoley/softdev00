@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Occupations</title>
+</head>
+<body>
+<center>
+<h4>This generates a random occupation based on the percentages in this table.  These percentages represent how much of the US work force this job makes up.  The data in this table was amassed by Mr. Brooks. Note: You can click any job title to be brought to a website that give you information on how to get started in that field.</h4>
+	<h3>Your random occupation is {{ occupation }}.</h3>
+<table border="1">
+	<tr><th>Occupation</th><th>Percentage</th></tr>
+	{% for job in jobs %}
+	{% if job == "Total" %}
+	<tr>
+		<th>{{ job }}</th>
+		<th>{{ jobs[job][0] }}</th>
+	</tr>
+	{% else %}
+	<tr>
+		<td><a href = {{ jobs[job][1] }} >{{ job }}</a></td>
+		<td>{{ jobs[job][0] }}</td>
+	</tr>
+	{% endif %}
+	{% endfor %}
+</table>
+</center>
+
+</body>
+</html>
