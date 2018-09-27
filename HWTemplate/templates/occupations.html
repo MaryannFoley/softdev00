@@ -5,16 +5,14 @@
     {{Heading}}
   </h2>
   <body>
-    {{value}}
     <table>
       <tr>
 	<th> {{ col1 }} </th>
 	<th> {{ col2 }} </th>
       </tr>
-      {% for key, value in result.items() %}
+      {% for x in y %}
       <tr>
-        <td> {{ key }} </td>
-        <td> {{ value }} </td>
+        <td> {{ x }} </td>
       </tr>
       {% endfor %}
     </table>
