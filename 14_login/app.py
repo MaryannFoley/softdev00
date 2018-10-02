@@ -1,3 +1,7 @@
+#Team pengWin: Maryann Foley and Tania Cao
+#SoftDev1 pd8
+#K14 -- Do I Know You?
+#2018-10-02    
 
 from flask import Flask, render_template, request,session,url_for,redirect
 import os
