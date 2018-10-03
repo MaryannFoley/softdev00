@@ -23,8 +23,6 @@ def auth():
     if givenUname=="usr": 
         if givenPwd=="pwd":
             session["uname"]=givenUname
-            if session.get("error"):
-                session.pop("error")
         else:
             flash("Incorrect password")#means password was wrong
     else:
