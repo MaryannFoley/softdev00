@@ -1,3 +1,4 @@
+# K #17: Average
 With your duo, write a Python script named stu_mean.py that will access the database built in your last assignment to
 
     Look up each student’s grades
