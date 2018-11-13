@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> API boii </title>
+</head>
+<body>
+  <h2 style="text-align: center;">
+    APSKY 
+  </h2>
+  <img src= {{ img }}>
+  <br>
+  <p>This is an image of {{ planet }}, taken on {{ date[0] }} at {{ date[1] }}.</p>
+  <br>
+  <ol>
+    <li>Obtained a key</li>
+    <li>Ran the following line of code:
+      <pre><xmp>
+  request=urllib.request.urlopen("https://api.nasa.gov/planetary/earth/imagery/?lon=100.75&lat=1.5&date=2014-02-01&cloud_score=True&api_key=4Gt3nL0hLF4rNbj9aifudBMdz0alxDewjaOIN2Rx")
+      </xmp></pre>
+      This returns an url object.
+    </li>
+    <li>
+      <pre><xmp>
+  raw=request.read()
+  jdict=json.loads(raw)
+</xmp></pre>
+This will get the json data and store it as a dict in jdict.
+    </li>
+    <li>Check out the JSON file <a href="https://api.nasa.gov/planetary/earth/imagery/?lon=100.75&lat=1.5&date=2014-02-01&cloud_score=True&api_key=4Gt3nL0hLF4rNbj9aifudBMdz0alxDewjaOIN2Rx">here!</a></li>
+
+  </ol>
+</body>
+</html>
