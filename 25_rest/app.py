@@ -10,7 +10,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-URL_STUB="https://transit.api.here.com/v3/route.json?routing=all&dep=40.6148221,-74.0367812&arr=40.7173116,-74.0144598&time=2018-11-19T07%3A30%3A00&"
+URL_STUB="https://transit.api.here.com/v3/route.json?routing=all&dep=40.6146455,-74.0369021&arr=40.7173116,-74.0144598&time=2018-11-15T07%3A30%3A00&"
 KEY="app_id=Yzt1XILAn7f4v6WSPBW3&app_code=yAvSoCdhn5jMmQk-CFlnqA"
 URL=URL_STUB+KEY
 
