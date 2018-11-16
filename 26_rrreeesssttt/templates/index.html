@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ArtPI</title>
+</head>
+<body>
+  <h2 style="text-align: center;">
+    Arty things
+  </h2>
+  <h3>A painting I like (via the Met API)</h3>
+  <img style="max-width: 500px" src={{ two["primaryImage"] }}>
+  <h5>{{ two["title"] }}</h5>
+  <p>By {{ two["artistDisplayName"] }}</p>
+  <h3>A Ghibli Movie (via Ghibli API)</h3>
+  <h4>{{ one["title"] }}</h4>
+  <p>Director: {{ one["director"] }}</p>
+
+  <p>Summary: {{ one["description"] }}</p>
+  <h3>Lyrics to a song (via Musixmatch)</h3>
+  <h5>Maud Gone by Car Seat Headrest</h5>
+  <p>
+    {% for i in lyrics %}
+      {{i}}
+      <br>
+    {% endfor %}
+  </p>
+</body>
+</html>
